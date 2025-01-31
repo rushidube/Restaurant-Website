@@ -1,0 +1,276 @@
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* Navbar */
+nav {
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  padding: 10px 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 50px;
+  background-color: rgb(213, 120, 14);
+  color: white;
+}
+
+header h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+header p {
+  font-size: 18px;
+}
+
+
+
+/* Main Sections */
+main {
+  margin: 20px;
+}
+
+/* Menu Section */
+#menu {
+  text-align: center;
+  margin: 20px auto;
+}
+
+#menu h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: rgb(213, 120, 14);
+  margin-bottom: 20px;
+  border-bottom: 2px solid rgb(213, 120, 14);
+  padding-bottom: 10px;
+}
+
+#menu-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.menu-item {
+  background-color: white;
+  padding: 15px;
+  margin: 10px;
+  width: 200px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.menu-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.menu-item button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.menu-item button:hover {
+  background-color: #218838;
+}
+
+/* Search and Filters */
+#search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#search-bar {
+  width: 80%;
+  max-width: 500px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#search-bar:focus {
+  border-color: rgb(213, 120, 14);
+  outline: none;
+}
+
+.filters {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.filters label {
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.filters select,
+.filters input {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Cart Section */
+#cart {
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#cart h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+#order-items {
+  list-style: none;
+  padding: 0;
+}
+
+#order-items li {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-radius: 6px;
+}
+
+#total {
+  font-size: 20px;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+.submit_btn {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit_btn:hover {
+  background-color: #218838;
+}
+
+/* View Cart Section */
+#view-cart {
+  text-align: center;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#clear-cart-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#clear-cart-btn:hover {
+  background-color: darkred;
+}
+
+/* About Us Section */
+#about-us {
+  background-color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#about-us h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+#about-us p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Contact Us Section */
+#info {
+  background-color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#info h2 {
+  font-size: 28px;
+}
+
+#info p {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+/* Footer */
+footer {
+  background-color: rgb(213, 120, 14);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+footer p {
+  margin: 0;
+}
+
